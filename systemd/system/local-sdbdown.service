@@ -1,0 +1,9 @@
+[Unit]
+Description=sdbdown
+ 
+[Service]
+Type=simple
+ExecStart=/home/mirci/bin/sdbdown
+ 
+[Install]
+WantedBy=multi-user.target

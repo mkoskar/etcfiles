@@ -1,0 +1,13 @@
+# GDM configuration storage
+
+[daemon]
+
+[security]
+
+[xdmcp]
+
+[greeter]
+
+[chooser]
+
+[debug]
