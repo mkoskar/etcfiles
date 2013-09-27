@@ -44,7 +44,6 @@
 
 !locale.conf
 !locale.gen*
-!makepkg.conf*
 !mkinitcpio.conf*
 !pacman.conf*
 !yaourtrc*
