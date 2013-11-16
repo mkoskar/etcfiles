@@ -3,6 +3,15 @@
 
 !.attic
 
+!default
+!default/grub*
+
+!laptop-mode
+!laptop-mode/laptop-mode.conf.diff
+
+!lvm
+!lvm/lvm.conf.diff
+
 !modprobe.d
 !modprobe.d/local.conf
 
