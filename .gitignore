@@ -45,7 +45,7 @@
 !systemd
 !systemd/logind*
 !systemd/system
-!systemd/system/local-sdbdown.service
+!systemd/system/local-*
 
 !udev
 !udev/rules.d

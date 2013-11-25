@@ -1,0 +1,10 @@
+[Unit]
+Description=lock
+Before=sleep.target
+
+[Service]
+Type=forking
+ExecStart=/bin/bash -c '/home/mirci/bin/lock & sleep 1'
+
+[Install]
+RequiredBy=sleep.target
