@@ -1,8 +1,7 @@
 [Unit]
 Description=sdbdown
-After=basic.target
-After=suspend.target
-After=hibernate.target
+DefaultDependencies=no
+After=basic.target suspend.target hibernate.target hybrid-sleep.target
 
 [Service]
 Type=oneshot
@@ -10,6 +9,4 @@ User=mirci
 ExecStart=/home/mirci/bin/sdbdown
 
 [Install]
-WantedBy=basic.target
-WantedBy=suspend.target
-WantedBy=hibernate.target
+WantedBy=basic.target suspend.target hibernate.target hybrid-sleep.target

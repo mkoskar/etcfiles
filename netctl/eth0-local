@@ -1,0 +1,5 @@
+Description='A basic static ethernet connection'
+Interface=eth0
+Connection=ethernet
+IP=static
+Address=('10.0.0.8/24')
