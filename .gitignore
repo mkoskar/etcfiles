@@ -3,55 +3,42 @@
 
 !.attic
 
-!default
+!X11/xorg.conf.d/10-evdev.conf*
+
+!adobe/mms.cfg*
+
 !default/grub*
 
-!laptop-mode
 !laptop-mode/laptop-mode.conf.diff
-!laptop-mode/conf.d
 !laptop-mode/conf.d/cpufreq.conf*
 
-!lvm
 !lvm/lvm.conf.diff
 
-!modprobe.d
 !modprobe.d/local.conf
 
-!modules-load.d
 !modules-load.d/virtualbox.conf
 
-!netctl
 !netctl/eth0-dhcp
 !netctl/eth0-local
 !netctl/usb0-dhcp
 
-!pacman.d
 !pacman.d/mirrorlist.make
 
-!postfix
 !postfix/aliases*
 !postfix/main.cf
 !postfix/main.cf.orig
 
-!profile.d
 !profile.d/zzz-local.sh
 
-!ssh
 !ssh/sshd_config*
 
-!sudoers.d
 !sudoers.d/local
 
-!sysctl.d
 !sysctl.d/local.conf
 
-!systemd
 !systemd/logind.conf*
-!systemd/system
 !systemd/system/local-*
 
-!udev
-!udev/rules.d
 !udev/rules.d/98-buspirate.rules
 !udev/rules.d/98-ols.rules
 
