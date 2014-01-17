@@ -1,0 +1,6 @@
+# vconsole-keymap.map
+
+include "/usr/share/kbd/keymaps/i386/qwerty/us.map"
+
+Control keycode 14 = Control_h
+Control keycode 35 = Delete

@@ -9,20 +9,22 @@
 
 !default/grub*
 
-!laptop-mode/laptop-mode.conf.diff
 !laptop-mode/conf.d/cpufreq.conf*
+!laptop-mode/laptop-mode.conf.diff
 
 !lvm/lvm.conf.diff
 
 !modprobe.d/local.conf
 
-!modules-load.d/virtualbox.conf
+!modules-load.d/local.conf
 
 !netctl/eth0-dhcp
 !netctl/eth0-local
 !netctl/usb0-dhcp
 
 !pacman.d/mirrorlist.make
+
+!pam.d/sudo*
 
 !postfix/aliases*
 !postfix/main.cf
@@ -36,14 +38,17 @@
 
 !sysctl.d/local.conf
 
-!systemd/logind.conf*
 !systemd/system/local-*
+!systemd/logind.conf*
+!systemd/system.conf*
 
 !udev/rules.d/98-buspirate.rules
 !udev/rules.d/98-ols.rules
 
+!environment*
 !locale.conf
 !locale.gen*
 !mkinitcpio.conf*
 !pacman.conf*
+!vconsole*
 !yaourtrc*
