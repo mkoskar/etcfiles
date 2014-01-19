@@ -42,6 +42,8 @@
 !systemd/logind.conf*
 !systemd/system.conf*
 
+!udev/rules.d/60-schedulers.rules
+!udev/rules.d/80-net-name-slot.rules
 !udev/rules.d/98-buspirate.rules
 !udev/rules.d/98-ols.rules
 

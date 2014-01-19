@@ -1,10 +1,15 @@
+#
+# /etc/fstab: static file system information
+#
+# <file system>                             <dir>       <type>      <options> <dump> <pass>
+
 # /dev/mapper/vg_mirci0-root
-UUID=<UUID>   /           ext4        defaults,relatime,discard    0 1
+UUID=<UUID>                                 /           ext4        defaults,relatime,discard 0 1
 
 # /dev/mapper/vg_mirci0-home
-UUID=<UUID>   /home       ext4        defaults,relatime,discard    0 2
+UUID=<UUID>                                 /home       ext4        defaults,relatime,discard 0 2
 
 # /dev/sda1
-UUID=<UUID>   /boot       ext2        defaults,relatime    0 2
+UUID=<UUID>                                 /boot       ext2        defaults,relatime 0 2
 
-#none    /dev/shm    tmpfs   defaults,size=768M,noexec,nodev,nosuid  0 0
+#none                                       /dev/shm    tmpfs       defaults,size=768M,noexec,nodev,nosuid 0 0
