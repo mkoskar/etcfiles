@@ -3,49 +3,71 @@
 
 !.attic
 
+!X11
+!X11/xorg.conf.d
 !X11/xorg.conf.d/10-evdev.conf*
 
+!adobe
 !adobe/mms.cfg*
 
+!default
 !default/grub*
 
+!laptop-mode
+!laptop-mode/conf.d
 !laptop-mode/conf.d/cpufreq.conf*
 !laptop-mode/laptop-mode.conf.diff
 
+!lvm
 !lvm/lvm.conf.diff
 
+!modprobe.d
 !modprobe.d/local.conf
 
+!modules-load.d
 !modules-load.d/local.conf
 
+!netctl
 !netctl/eth0-dhcp
 !netctl/eth0-local
 !netctl/usb0-dhcp
 
+!pacman.d
 !pacman.d/mirrorlist.make
 
+!pam.d
 !pam.d/sudo*
 
+!postfix
 !postfix/aliases*
 !postfix/main.cf
 !postfix/main.cf.orig
 
+!profile.d
 !profile.d/zzz-local.sh
 
+!ssh
 !ssh/sshd_config*
 
+!sudoers.d
 !sudoers.d/local
 
+!sysctl.d
 !sysctl.d/local.conf
 
+!systemd
+!systemd/system
 !systemd/system/local-*
 !systemd/logind.conf*
 !systemd/system.conf*
 
+!udev
+!udev/rules.d
 !udev/rules.d/60-schedulers.rules
 !udev/rules.d/80-net-name-slot.rules
 !udev/rules.d/98-buspirate.rules
 !udev/rules.d/98-ols.rules
+!udev/rules.d/98-udisks2.rules
 
 !environment*
 !locale.conf
