@@ -64,7 +64,7 @@
 !udev
 !udev/rules.d
 !udev/rules.d/60-schedulers.rules
-!udev/rules.d/80-net-name-slot.rules
+!udev/rules.d/80-net-setup-link.rules
 !udev/rules.d/98-buspirate.rules
 !udev/rules.d/98-ols.rules
 !udev/rules.d/98-udisks2.rules
@@ -74,5 +74,6 @@
 !locale.gen*
 !mkinitcpio.conf*
 !pacman.conf*
+!thinkfan.conf
 !vconsole*
 !yaourtrc*
