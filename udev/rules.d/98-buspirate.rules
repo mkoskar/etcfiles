@@ -1,1 +1,1 @@
-SUBSYSTEM=="tty", ATTRS{serial}=="A900F4DB", GROUP="mirci", MODE="0660", SYMLINK+="buspirate"
+SUBSYSTEM=="tty", ATTRS{serial}=="A900F4DB", GROUP="miro", MODE="0660", SYMLINK+="buspirate"

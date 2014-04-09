@@ -5,8 +5,7 @@ After=basic.target suspend.target hibernate.target hybrid-sleep.target
 
 [Service]
 Type=oneshot
-User=mirci
-ExecStart=/home/mirci/bin/sdbdown
+ExecStart=/home/miro/bin/sdbdown
 
 [Install]
 WantedBy=basic.target suspend.target hibernate.target hybrid-sleep.target
