@@ -1,6 +1,6 @@
---- lvm.conf	2013-10-27 19:55:11.688796640 +0100
-+++ lvm.conf.orig	2013-10-05 09:58:51.000000000 +0200
-@@ -215,7 +215,7 @@
+--- lvm.conf	2014-04-14 13:45:18.629112597 +0200
++++ lvm.conf.orig	2014-04-11 23:51:24.000000000 +0200
+@@ -244,7 +244,7 @@
      # to 1, discards will only be issued if both the storage and kernel provide
      # support.
      # 1 enables; 0 disables.
