@@ -1,11 +1,11 @@
 [Unit]
-Description=sdbdown
+Description=bay-standby
 DefaultDependencies=no
 After=basic.target suspend.target hibernate.target hybrid-sleep.target
 
 [Service]
-Type=oneshot
-ExecStart=/home/miro/bin/sdbdown
+Type=simple
+ExecStart=/home/miro/bin/bay-standby
 
 [Install]
 WantedBy=basic.target suspend.target hibernate.target hybrid-sleep.target

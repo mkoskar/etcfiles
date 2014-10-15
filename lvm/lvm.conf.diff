@@ -1,11 +1,11 @@
---- lvm.conf	2014-04-14 13:45:18.629112597 +0200
-+++ lvm.conf.orig	2014-04-11 23:51:24.000000000 +0200
-@@ -244,7 +244,7 @@
+--- lvm.conf.orig
++++ lvm.conf
+@@ -263,7 +263,7 @@ Hunk #1, lvm.conf devices {
      # to 1, discards will only be issued if both the storage and kernel provide
      # support.
      # 1 enables; 0 disables.
--    issue_discards = 1
-+    issue_discards = 0
+-    issue_discards = 0
++    issue_discards = 1
  }
  
  # This section allows you to configure the way in which LVM selects
