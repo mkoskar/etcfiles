@@ -21,7 +21,6 @@
 !netctl/eth0-local
 !netctl/usb0-dhcp
 !pacman.conf*
-!pacman.d/mirrorlist.make
 !postfix/aliases*
 !postfix/main.cf
 !postfix/main.cf.orig
