@@ -1,5 +1,9 @@
---- lvm.conf.orig
-+++ lvm.conf
+---
+ lvm.conf |    2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+--- a/lvm.conf.orig
++++ b/lvm.conf
 @@ -263,7 +263,7 @@ Hunk #1, lvm.conf devices {
      # to 1, discards will only be issued if both the storage and kernel provide
      # support.
