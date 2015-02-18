@@ -4,7 +4,7 @@
 
 --- a/lvm.conf.orig
 +++ b/lvm.conf
-@@ -263,7 +263,7 @@ Hunk #1, lvm.conf devices {
+@@ -287,7 +287,7 @@ Hunk #1, lvm.conf devices {
      # to 1, discards will only be issued if both the storage and kernel provide
      # support.
      # 1 enables; 0 disables.

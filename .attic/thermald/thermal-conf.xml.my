@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+
+<ThermalConfiguration>
+    <Platform>
+        <Name>Lenovo ThinkPad T530</Name>
+        <UUID>*</UUID>
+        <ProductName>*</ProductName>
+        <Preference>QUIET</Preference>
+        <ThermalZones>
+            <ThermalZone>
+                <Type>Custom1</Type>
+                <TripPoints>
+                    <TripPoint>
+                        <SensorType>x86_pkg_temp</SensorType>
+                        <Temperature>50000</Temperature>
+                        <Type>passive</Type>
+                        <ControlType>SEQUENTIAL</ControlType>
+                        <CoolingDevice>
+                            <Type>rapl_controller</Type>
+                            <Influence>100</Influence>
+                            <SamplingPeriod>10</SamplingPeriod>
+                        </CoolingDevice>
+                        <CoolingDevice>
+                            <Type>intel_pstate</Type>
+                            <Influence>90</Influence>
+                            <SamplingPeriod>10</SamplingPeriod>
+                        </CoolingDevice>
+                        <CoolingDevice>
+                            <Type>intel_powerclamp</Type>
+                            <Influence>80</Influence>
+                            <SamplingPeriod>10</SamplingPeriod>
+                        </CoolingDevice>
+                        <CoolingDevice>
+                            <Type>Processor</Type>
+                            <Influence>70</Influence>
+                            <SamplingPeriod>10</SamplingPeriod>
+                        </CoolingDevice>
+                    </TripPoint>
+                </TripPoints>
+            </ThermalZone>
+        </ThermalZones>
+    </Platform>
+</ThermalConfiguration>

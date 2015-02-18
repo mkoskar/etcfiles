@@ -1,0 +1,33 @@
+#!/usr/bin/nft -f
+
+table ip filter {
+    chain input {
+        type filter hook input priority 0;
+
+        ct state {established, related} accept
+        ct state invalid drop
+
+        iifname lo accept
+
+        ip protocol icmp accept
+
+        #tcp dport <port> accept
+
+        reject with icmp type port-unreachable
+    }
+
+    chain forward {
+        type filter hook forward priority 0;
+
+        #iifname <ifname> accept
+        #oifname <ofname> accept
+
+        drop
+    }
+
+    chain output {
+        type filter hook output priority 0;
+
+        accept
+    }
+}

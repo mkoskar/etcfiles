@@ -5,6 +5,7 @@
 #<ip-address>   <hostname.domain.org>   <hostname>
 127.0.0.1       localhost.localdomain   localhost       mirci
 ::1             localhost.localdomain   localhost       mirci
+
 8.8.8.8                                 google-dns1
 8.8.4.4                                 google-dns2
 
