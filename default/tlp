@@ -27,8 +27,8 @@ MAX_LOST_WORK_SECS_ON_BAT=60
 #   You *must* disable your distribution's governor settings or conflicts will
 #   occur. ondemand is sufficient for *almost all* workloads, you should know
 #   what you're doing!
-#CPU_SCALING_GOVERNOR_ON_AC=ondemand
-#CPU_SCALING_GOVERNOR_ON_BAT=ondemand
+CPU_SCALING_GOVERNOR_ON_AC=performance
+CPU_SCALING_GOVERNOR_ON_BAT=powersave
 
 # Set the min/max frequency available for the scaling governor.
 # Possible values strongly depend on your CPU. For available frequencies see
@@ -42,10 +42,10 @@ MAX_LOST_WORK_SECS_ON_BAT=60
 # Limit the max/min P-state to control the power dissipation of the CPU.
 # Values are stated as a percentage of the available performance.
 # Requires an Intel Core i processor with intel_pstate driver.
-CPU_MIN_PERF_ON_AC=0
-CPU_MAX_PERF_ON_AC=100
-CPU_MIN_PERF_ON_BAT=0
-CPU_MAX_PERF_ON_BAT=30
+#CPU_MIN_PERF_ON_AC=0
+#CPU_MAX_PERF_ON_AC=100
+#CPU_MIN_PERF_ON_BAT=0
+#CPU_MAX_PERF_ON_BAT=30
 
 # Set the CPU "turbo boost" feature: 0=disable, 1=allow
 # Requires an Intel Core i processor.
@@ -56,8 +56,8 @@ CPU_MAX_PERF_ON_BAT=30
 #CPU_BOOST_ON_BAT=0
 
 # Minimize number of used CPU cores/hyper-threads under light load conditions
-SCHED_POWERSAVE_ON_AC=0
-SCHED_POWERSAVE_ON_BAT=1
+#SCHED_POWERSAVE_ON_AC=0
+#SCHED_POWERSAVE_ON_BAT=1
 
 # Kernel NMI Watchdog:
 #   0=disable (default, saves power), 1=enable (for kernel debugging only)
@@ -227,7 +227,7 @@ DEVICES_TO_DISABLE_ON_STARTUP="bluetooth wwan"
 # START_CHARGE_TRESH value and stops when exceeding the STOP_CHARGE_TRESH value.
 # Main / Internal battery (values in %)
 START_CHARGE_THRESH_BAT0=75
-STOP_CHARGE_THRESH_BAT0=80
+STOP_CHARGE_THRESH_BAT0=85
 # Ultrabay / Slice / Replaceable battery (values in %)
 #START_CHARGE_THRESH_BAT1=75
 #STOP_CHARGE_THRESH_BAT1=80

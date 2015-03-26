@@ -58,7 +58,7 @@ command_directory = /usr/bin
 # daemon programs (i.e. programs listed in the master.cf file). This
 # directory must be owned by root.
 #
-daemon_directory = /usr/lib/postfix
+daemon_directory = /usr/lib/postfix/bin
 
 # The data_directory parameter specifies the location of Postfix-writable
 # data files (caches, random numbers). This directory must be owned
@@ -670,7 +670,7 @@ manpage_directory = /usr/share/man
 # sample_directory: The location of the Postfix sample configuration files.
 # This parameter is obsolete as of Postfix 2.1.
 #
-sample_directory = /etc/postfix/sample
+sample_directory = /etc/postfix
 
 # readme_directory: The location of the Postfix README files.
 #
