@@ -24,7 +24,7 @@
 !fstab.example
 !hosts.example
 !hostsblock
-!hostsblock/rc.conf*
+!hostsblock/hostsblock.conf*
 !issue*
 !kmscon
 !kmscon/kmscon.conf
