@@ -5,7 +5,7 @@ After=basic.target suspend.target hibernate.target hybrid-sleep.target
 
 [Service]
 Type=simple
-ExecStart=/home/miro/bin/bay-standby
+ExecStart=/usr/local/bin/bay-standby
 
 [Install]
 WantedBy=basic.target suspend.target hibernate.target hybrid-sleep.target

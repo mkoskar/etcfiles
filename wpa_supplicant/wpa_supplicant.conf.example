@@ -1,0 +1,18 @@
+ap_scan=1
+eapol_version=1
+fast_reauth=1
+update_config=0
+
+ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=adm
+
+network={
+    ssid="ssid"
+    psk="psk"
+    priority=0
+    disables=0
+
+    proto=RSN
+    key_mgmt=WPA-PSK-SHA256
+    ieee80211w=2
+    group=CCMP TKIP
+}
