@@ -1,0 +1,33 @@
+# vim: ft=xf86conf
+
+Section "Device"
+    Identifier "card0-zaphod-lvds"
+    Driver "intel"
+    BusID "PCI:0:2:0"
+    Screen 0
+    Option "ZaphodHeads" "0:LVDS1"
+EndSection
+
+Section "Device"
+    Identifier "card0-zaphod-other"
+    Driver "intel"
+    BusID "PCI:0:2:0"
+    Screen 1
+    Option "ZaphodHeads" "1,2:DP1,DP2,DP3,HDMI1,HDMI2,HDMI3,VGA1"
+EndSection
+
+Section "Screen"
+    Identifier "screen-lvds"
+    Device "card0-zaphod-lvds"
+EndSection
+
+Section "Screen"
+    Identifier "screen-other"
+    Device "card0-zaphod-other"
+EndSection
+
+Section "ServerLayout"
+    Identifier "layout0"
+    Screen "screen-lvds"
+    Screen "screen-other" RightOf "screen-lvds"
+EndSection

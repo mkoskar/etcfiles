@@ -4,13 +4,13 @@
 # <file system>                             <dir>           <type> <options> <dump> <pass>
 
 # /dev/mapper/vg_mirci0-root
-UUID=<UUID>                                 /               ext4   defaults,relatime,discard 0 1
+UUID=<UUID>                                 /               ext4   defaults,relatime 0 1
 
 # /dev/sda1
 UUID=<UUID>                                 /boot           ext2   defaults,relatime 0 2
 
 # /dev/mapper/vg_mirci0-home
-UUID=<UUID>                                 /home           ext4   defaults,relatime,discard 0 2
+UUID=<UUID>                                 /home           ext4   defaults,relatime 0 2
 
 /home/docker.img                            /home/docker    btrfs  loop,defaults 0 0
 

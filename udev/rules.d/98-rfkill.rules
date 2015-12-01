@@ -1,0 +1,3 @@
+ACTION=="add", SUBSYSTEM=="rfkill", ATTR{soft}="1"
+ACTION=="add", SUBSYSTEM=="rfkill", ATTR{type}=="wlan", ATTR{soft}="0"
+ACTION=="add", SUBSYSTEM=="rfkill", ATTR{type}=="bluetooth", ATTR{name}=="hci0", ATTR{soft}="0"

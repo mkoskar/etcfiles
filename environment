@@ -4,4 +4,9 @@
 # Syntax: simple "KEY=VAL" pairs on separate lines
 #
 
-TERMINFO_DIRS=/etc/terminfo:
+EDITOR='vim'
+LANG='en_US.UTF-8'
+LC_COLLATE='C'
+LESS='-MRSci'
+LESSHISTFILE='-'
+TERMINFO_DIRS='/etc/terminfo:'

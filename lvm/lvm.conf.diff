@@ -4,10 +4,10 @@
 
 --- a/lvm.conf.orig
 +++ b/lvm.conf
-@@ -292,7 +292,7 @@ Hunk #1, lvm.conf devices {
- 	# Not all storage will support or benefit from discards, but SSDs
- 	# and thinly provisioned LUNs generally do.  If enabled, discards
- 	# will only be issued if both the storage and kernel provide support.
+@@ -298,7 +298,7 @@ Hunk #1, lvm.conf devices {
+ 	# benefit from discards, but SSDs and thinly provisioned LUNs
+ 	# generally do. If enabled, discards will only be issued if both the
+ 	# storage and kernel provide support.
 -	issue_discards = 0
 +	issue_discards = 1
  }

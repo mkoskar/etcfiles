@@ -1,1 +1,1 @@
-ACTION=="add|change", SUBSYSTEM=="graphics", KERNEL=="fbcon", ATTR{cursor_blink}="0"
+ACTION=="add", SUBSYSTEM=="graphics", KERNEL=="fbcon", ATTR{cursor_blink}="0"

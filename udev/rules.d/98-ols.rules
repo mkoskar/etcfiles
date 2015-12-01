@@ -1,1 +1,1 @@
-SUBSYSTEM=="tty", ATTRS{idVendor}=="04d8", ATTRS{idProduct}=="fc92", GROUP="adm", MODE="0660", SYMLINK+="ols"
+ACTION=="add", SUBSYSTEM=="tty", ATTRS{idVendor}=="04d8", ATTRS{idProduct}=="fc92", GROUP="adm", MODE="0660", SYMLINK+="ols"
