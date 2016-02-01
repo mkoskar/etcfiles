@@ -1,0 +1,9 @@
+# vim: ft=xf86conf
+
+Section "Device"
+    Identifier "card0"
+    Driver "intel"
+    BusID "PCI:0:2:0"
+#    Option "AccelMethod" "uxa"
+#    Option "TearFree" "on"
+EndSection
