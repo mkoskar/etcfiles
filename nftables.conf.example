@@ -10,6 +10,8 @@ table ip filter {
         iifname lo accept
         ip protocol icmp accept
 
+        udp dport 5353 accept
+
         #tcp dport <port> accept
 
         reject with icmp type port-unreachable
