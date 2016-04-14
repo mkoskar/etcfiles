@@ -1,10 +1,17 @@
 # vim: ft=xf86conf
 
+#Section "Device"
+#    Identifier "card0"
+#    Driver "modesetting"
+#    BusID "pci:0:2:0"
+#EndSection
+
 Section "Device"
     Identifier "card0"
     Driver "intel"
-    BusID "PCI:0:2:0"
+    BusID "pci:0:2:0"
 
+    Option "DRI" "3"
     #Option "AccelMethod" "uxa"
     Option "TearFree" "on"
     #Option "ReprobeOutputs" "on"

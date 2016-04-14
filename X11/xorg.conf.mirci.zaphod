@@ -3,7 +3,7 @@
 Section "Device"
     Identifier "card0-zaphod-lvds"
     Driver "intel"
-    BusID "PCI:0:2:0"
+    BusID "pci:0:2:0"
     Screen 0
     Option "ZaphodHeads" "0:LVDS1"
 EndSection
@@ -11,7 +11,7 @@ EndSection
 Section "Device"
     Identifier "card0-zaphod-other"
     Driver "intel"
-    BusID "PCI:0:2:0"
+    BusID "pci:0:2:0"
     Screen 1
     Option "ZaphodHeads" "1,2:DP1,DP2,DP3,HDMI1,HDMI2,HDMI3,VGA1"
 EndSection
