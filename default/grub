@@ -1,7 +1,7 @@
 GRUB_DEFAULT=0
 GRUB_TIMEOUT=0
 GRUB_DISTRIBUTOR="Arch"
-GRUB_CMDLINE_LINUX_DEFAULT="quiet loglevel=3 consoleblank=300 acpi_backlight=video"
+GRUB_CMDLINE_LINUX_DEFAULT="quiet loglevel=3 consoleblank=300 acpi_backlight=video rfkill.default_state=0 video.brightness_switch_enabled=0"
 GRUB_CMDLINE_LINUX="cryptdevice=/dev/sda2:vg_mirci0:allow-discards"
 GRUB_DISABLE_SUBMENU=y
 

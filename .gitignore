@@ -8,6 +8,9 @@
 !/X11/xorg.conf*
 !/X11/xorg.conf.d/
 !/X11/xorg.conf.d/20-input.conf
+!/acpi/
+!/acpi/events/
+!/acpi/events/anything*
 !/adobe/
 !/adobe/mms.cfg*
 !/anacrontab*
@@ -74,6 +77,7 @@
 !/systemd/system.conf*
 !/systemd/system/
 !/systemd/system/bitlbee.socket
+!/systemd/system/bluetooth.service
 !/systemd/system/dnscrypt-proxy.*
 !/systemd/system/docker.service
 !/systemd/system/local-*
@@ -85,12 +89,12 @@
 !/udev/rules.d/50-powersave.rules
 !/udev/rules.d/60-schedulers.rules
 !/udev/rules.d/80-net-setup-link.rules
-!/udev/rules.d/98-backlight.rules
-!/udev/rules.d/98-buspirate.rules
-!/udev/rules.d/98-fbcon.rules
-!/udev/rules.d/98-ols.rules
-!/udev/rules.d/98-rfkill.rules
-!/udev/rules.d/98-udisks2.rules
+!/udev/rules.d/90-backlight.rules
+!/udev/rules.d/90-buspirate.rules
+!/udev/rules.d/90-fbcon.rules
+!/udev/rules.d/90-ols.rules
+!/udev/rules.d/90-rfkill.rules
+!/udev/rules.d/90-udisks2.rules
 !/vconsole*
 !/wpa_supplicant/
 !/wpa_supplicant/wpa_supplicant-wlan0.conf

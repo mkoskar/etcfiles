@@ -161,7 +161,7 @@
 #en_SG.UTF-8 UTF-8  
 #en_SG ISO-8859-1  
 en_US.UTF-8 UTF-8  
-#en_US ISO-8859-1  
+en_US ISO-8859-1  
 #en_ZA.UTF-8 UTF-8  
 #en_ZA ISO-8859-1  
 #en_ZM UTF-8  
@@ -394,8 +394,8 @@ en_US.UTF-8 UTF-8
 #shs_CA UTF-8  
 #si_LK UTF-8  
 #sid_ET UTF-8  
-#sk_SK.UTF-8 UTF-8  
-#sk_SK ISO-8859-2  
+sk_SK.UTF-8 UTF-8  
+sk_SK ISO-8859-2  
 #sl_SI.UTF-8 UTF-8  
 #sl_SI ISO-8859-2  
 #so_DJ.UTF-8 UTF-8  
