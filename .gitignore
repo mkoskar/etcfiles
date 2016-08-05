@@ -18,6 +18,8 @@
 !/avahi/avahi-daemon.conf*
 !/bitlbee/
 !/bitlbee/bitlbee.conf.*
+!/bluetooth/
+!/bluetooth/main.conf
 !/ca-certificates/
 !/ca-certificates/trust-source/
 !/ca-certificates/trust-source/anchors/
@@ -76,10 +78,11 @@
 !/systemd/network/wlan0-dhcp.network
 !/systemd/system.conf*
 !/systemd/system/
-!/systemd/system/bitlbee.socket
-!/systemd/system/bluetooth.service
+!/systemd/system/bluetooth.service.d/
+!/systemd/system/bluetooth.service.d/*
 !/systemd/system/dnscrypt-proxy.*
-!/systemd/system/docker.service
+!/systemd/system/docker.service.d/
+!/systemd/system/docker.service.d/*
 !/systemd/system/local-*
 !/systemd/system/tpacpi-bat.service
 !/tmpfiles.d/
