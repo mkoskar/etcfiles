@@ -5,7 +5,7 @@ Before=sleep.target
 
 [Service]
 Type=forking
-ExecStart=/bin/bash -c '/usr/local/bin/lock miro & sleep 2'
+ExecStart=/usr/bin/bash -c '/usr/local/bin/lock miro & sleep 2'
 
 [Install]
 WantedBy=sleep.target
