@@ -12,6 +12,8 @@ UUID=<UUID>                                 /boot               ext2   defaults,
 # /dev/mapper/vg_mirci0-home
 UUID=<UUID>                                 /home               ext4   defaults,relatime 0 2
 
+/home/cache/pacman                          /var/cache/pacman   none   defaults,bind 0 0
+
 /home/docker.img                            /var/lib/docker     btrfs  loop,defaults 0 0
 
 /home/machines.img                          /var/lib/machines   btrfs  loop,defaults 0 0
