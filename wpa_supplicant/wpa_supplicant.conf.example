@@ -5,14 +5,15 @@ update_config=0
 
 ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=adm
 
+# WPA-PSK
 network={
     ssid="ssid"
-    psk="psk"
-    priority=0
-    disables=0
+    psk=<see wpa_passphrase>
+}
 
-    proto=RSN
-    key_mgmt=WPA-PSK-SHA256
-    ieee80211w=2
-    group=CCMP TKIP
+# WPA-PSK (hidden ssid)
+network={
+    ssid="ssid"
+    scan_ssid=1
+    psk=<see wpa_passphrase>
 }
