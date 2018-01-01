@@ -1,12 +1,11 @@
-#
-# /etc/hosts: static lookup table for host names
-#
+# Static table lookup for hostnames.
+# See hosts(5) for details.
 
-#<ip-address>   <hostname.domain.org>   <hostname>
-127.0.0.1       localhost.localdomain   localhost       mirci
-::1             localhost.localdomain   localhost       mirci
+127.0.0.1       localhost.localdomain localhost
+::1             localhost.localdomain localhost
 
-8.8.8.8                                 google-dns1
-8.8.4.4                                 google-dns2
+127.0.0.1       mirci.localdomain mirci
+::1             mirci.localdomain mirci
 
-# End of file
+8.8.8.8         google-dns1
+8.8.4.4         google-dns2

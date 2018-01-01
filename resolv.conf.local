@@ -1,2 +1,5 @@
+# Resolver configuration file.
+# See resolv.conf(5) for details.
+
 nameserver 127.0.0.1
 options edns0
