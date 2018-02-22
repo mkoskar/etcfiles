@@ -6,7 +6,7 @@ After=basic.target suspend.target hibernate.target hybrid-sleep.target
 [Service]
 Type=oneshot
 SyslogIdentifier=%N
-ExecStart=/usr/local/bin/bay standby
+ExecStart=/usr/local/bin/powersave
 
 [Install]
 WantedBy=basic.target suspend.target hibernate.target hybrid-sleep.target

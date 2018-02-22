@@ -1,9 +1,0 @@
-[Unit]
-Description=%N timer
-
-[Timer]
-OnCalendar=weekly
-Persistent=yes
-
-[Install]
-WantedBy=timers.target
