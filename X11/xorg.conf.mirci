@@ -11,13 +11,5 @@ Section "Device"
     Driver "intel"
     BusID "pci:0:2:0"
 
-    Option "DRI" "3"
-    #Option "AccelMethod" "uxa"
     Option "TearFree" "on"
-    #Option "ReprobeOutputs" "on"
-    #Option "XvPreferOverlay" "on"
-    #Option "Vsync" "off"
-    #Option "PageFlip" "off"
-    #Option "SwapbuffersWait" "off"
-    #Option "TripleBuffer" "off"
 EndSection

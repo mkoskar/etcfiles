@@ -5,8 +5,12 @@
 # * https://www.kernel.org/doc/Documentation/power/pci.txt
 # * https://www.kernel.org/doc/Documentation/usb/power-management.txt
 
-ACTION=="add", SUBSYSTEM=="net", KERNEL=="eth*", RUN+="/usr/bin/ethtool -s %k wol d"
-ACTION=="add", SUBSYSTEM=="net", KERNEL=="wlan*", RUN+="/usr/sbin/iw dev %k set power_save on"
+ACTION=="add", SUBSYSTEM=="net", KERNEL=="eth*", \
+    RUN+="/usr/bin/ethtool -s %k wol d"
+
+ACTION=="add", SUBSYSTEM=="net", KERNEL=="wlan*", \
+    RUN+="/usr/sbin/iw dev %k set power_save on"
+
 ACTION=="add", SUBSYSTEM=="pci", ATTR{power/control}="auto"
 
 # Kernel disables autosuspend (power/control="on") for all USB devices other
@@ -14,8 +18,14 @@ ACTION=="add", SUBSYSTEM=="pci", ATTR{power/control}="auto"
 # support, it can enable autosuspend all by itself (e.g., uvcvideo).
 
 # ID 17ef:1003 Lenovo Integrated Smart Card Reader
-ACTION=="add", SUBSYSTEM=="usb", ATTR{idVendor}=="17ef", ATTR{idProduct}=="1003", TEST=="power/control", ATTR{power/control}="auto"
-# ID 147e:2020 Upek TouchChip Fingerprint Coprocessor (WBF advanced mode)
-ACTION=="add", SUBSYSTEM=="usb", ATTR{idVendor}=="147e", ATTR{idProduct}=="2020", TEST=="power/control", ATTR{power/control}="auto"
+ACTION=="add", SUBSYSTEM=="usb", \
+    ATTR{idVendor}=="17ef", ATTR{idProduct}=="1003", \
+    TEST=="power/control", ATTR{power/control}="auto"
 
-ACTION=="add|change", SUBSYSTEM=="power_supply", ATTR{type}=="Mains", RUN+="/usr/local/bin/powersave"
+# ID 147e:2020 Upek TouchChip Fingerprint Coprocessor (WBF advanced mode)
+ACTION=="add", SUBSYSTEM=="usb", \
+    ATTR{idVendor}=="147e", ATTR{idProduct}=="2020", \
+    TEST=="power/control", ATTR{power/control}="auto"
+
+ACTION=="add|change", SUBSYSTEM=="power_supply", ATTR{type}=="Mains", \
+    RUN+="/usr/local/bin/powersave"

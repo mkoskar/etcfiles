@@ -1,0 +1,12 @@
+[Unit]
+Description=%N service
+DefaultDependencies=no
+Before=sleep.target
+
+[Service]
+Type=forking
+SyslogIdentifier=%N
+ExecStart=/bin/sh -c '/usr/local/bin/lock miro & sleep 2'
+
+[Install]
+WantedBy=sleep.target

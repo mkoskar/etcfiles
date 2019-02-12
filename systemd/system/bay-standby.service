@@ -1,0 +1,12 @@
+[Unit]
+Description=%N service
+DefaultDependencies=no
+After=basic.target suspend.target hibernate.target hybrid-sleep.target
+
+[Service]
+Type=oneshot
+SyslogIdentifier=%N
+ExecStart=/usr/local/bin/bay standby
+
+[Install]
+WantedBy=basic.target suspend.target hibernate.target hybrid-sleep.target
