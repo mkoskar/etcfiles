@@ -3,9 +3,8 @@
 GRUB_DEFAULT=0
 GRUB_TIMEOUT=0
 GRUB_DISTRIBUTOR="Arch"
-GRUB_CMDLINE_LINUX_DEFAULT="quiet loglevel=3 consoleblank=300 acpi_backlight=video rfkill.default_state=0 video.brightness_switch_enabled=0"
+GRUB_CMDLINE_LINUX_DEFAULT="audit=0 loglevel=3 quiet consoleblank=300 acpi_backlight=video rfkill.default_state=0 video.brightness_switch_enabled=0"
 GRUB_CMDLINE_LINUX="cryptdevice=/dev/sda2:vg_mirci0:allow-discards"
-GRUB_DISABLE_SUBMENU=y
 
 # Preload both GPT and MBR modules so that they are not missed
 GRUB_PRELOAD_MODULES="part_gpt part_msdos"
@@ -13,9 +12,9 @@ GRUB_PRELOAD_MODULES="part_gpt part_msdos"
 # Uncomment to enable booting from LUKS encrypted devices
 #GRUB_ENABLE_CRYPTODISK=y
 
-# Uncomment to enable Hidden Menu, and optionally hide the timeout count
-GRUB_HIDDEN_TIMEOUT=1
-GRUB_HIDDEN_TIMEOUT_QUIET=true
+# Set to 'countdown' or 'hidden' to change timeout behavior,
+# press ESC key to display menu.
+GRUB_TIMEOUT_STYLE=hidden
 
 # Uncomment to use basic console
 GRUB_TERMINAL_INPUT=console
