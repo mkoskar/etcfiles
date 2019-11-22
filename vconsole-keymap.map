@@ -1,4 +1,40 @@
 include "/usr/share/kbd/keymaps/i386/qwerty/us.map"
 
-Control keycode 14 = Control_h
-Control keycode 35 = Delete
+# keycode 14 (KEY_BACKSPACE)
+control keycode 14 = Control_h
+
+# keycode 35 (KEY_H)
+control keycode 35 = Delete
+
+# keycode 70 (KEY_SCROLLLOCK)
+# plain = Scroll_Lock
+# altgr = Show_Registers
+# shift = Show_Memory
+# control = Show_State
+alt keycode 70 = Show_Registers
+
+# keycode 83 (KEY_KPDOT)
+# control alt = Boot
+# control altgr = Boot
+
+# keycode 87 (KEY_F11)
+control alt keycode 87 = Decr_Console
+
+# keycode 88 (KEY_F12)
+control alt keycode 88 = Incr_Console
+
+# keycode 99 (KEY_SYSRQ)
+# plain = Compose
+
+# keycode 100 (KEY_RIGHTALT)
+# alt = Compose
+shift keycode 100 = Compose
+
+# keycode 103 (KEY_UP)
+# alt = KeyboardSignal
+
+# keycode 111 (KEY_DELETE)
+# control alt = Boot
+# control altgr = Boot
+
+# keycode 119 (KEY_PAUSE)

@@ -4,7 +4,7 @@ GRUB_DEFAULT=0
 GRUB_TIMEOUT=0
 GRUB_DISTRIBUTOR="Arch"
 GRUB_CMDLINE_LINUX_DEFAULT="audit=0 loglevel=3 quiet consoleblank=300 acpi_backlight=video rfkill.default_state=0 video.brightness_switch_enabled=0"
-GRUB_CMDLINE_LINUX="cryptdevice=/dev/sda2:vg_mirci0:allow-discards"
+GRUB_CMDLINE_LINUX="cryptdevice=/dev/disk/by-uuid/6c2654df-85f8-4db5-8fd4-6771e0c27dd4:vg_mirci0:allow-discards"
 
 # Preload both GPT and MBR modules so that they are not missed
 GRUB_PRELOAD_MODULES="part_gpt part_msdos"
@@ -49,6 +49,6 @@ GRUB_DISABLE_RECOVERY=true
 # Uncomment to get a beep at GRUB start
 #GRUB_INIT_TUNE="480 440 1"
 
-# Uncomment to make GRUB remember the last selection. This requires to
-# set 'GRUB_DEFAULT=saved' above.
+# Uncomment to make GRUB remember the last selection. This requires
+# setting 'GRUB_DEFAULT=saved' above.
 #GRUB_SAVEDEFAULT="true"

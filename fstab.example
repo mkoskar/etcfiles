@@ -3,13 +3,8 @@
 #
 # <file system>                             <dir>                       <type> <options> <dump> <pass>
 
-# /dev/mapper/vg_mirci0-root
 UUID=<UUID>                                 /                           ext4   defaults,relatime 0 1
-
-# /dev/sda1
 UUID=<UUID>                                 /boot                       ext2   defaults,relatime 0 2
-
-# /dev/mapper/vg_mirci0-home
 UUID=<UUID>                                 /home                       ext4   defaults,relatime 0 2
 
 /home/cache/pacman/local                    /var/cache/pacman/pkg       none   defaults,bind 0 0
@@ -18,7 +13,6 @@ UUID=<UUID>                                 /home                       ext4   d
 /home/packages/tmp                          /home/cache/pacman/tmp      none   defaults,bind,ro 0 0
 
 /home/docker.img                            /var/lib/docker             btrfs  loop,defaults 0 0
-
 /home/machines.img                          /var/lib/machines           btrfs  loop,defaults 0 0
 
 tmpfs                                       /home/miro/tmp              tmpfs  defaults,mode=755,uid=1000,gid=1000 0 0
