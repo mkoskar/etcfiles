@@ -1,11 +1,5 @@
 # Static table lookup for hostnames.
 # See hosts(5) for details.
 
-127.0.0.1       localhost.localdomain localhost
-::1             localhost.localdomain localhost
-
-127.0.0.1       mirci.localdomain mirci
-::1             mirci.localdomain mirci
-
-8.8.8.8         google-dns1
-8.8.4.4         google-dns2
+127.0.0.1   localhost.localdomain localhost
+::1         localhost.localdomain localhost

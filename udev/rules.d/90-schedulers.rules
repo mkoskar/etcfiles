@@ -1,5 +1,5 @@
 ACTION=="add", KERNEL=="sd[a-z]", ATTR{queue/rotational}=="0", \
-    ATTR{queue/scheduler}="deadline"
+    ATTR{queue/scheduler}="mq-deadline"
 
 ACTION=="add", KERNEL=="sd[a-z]", ATTR{queue/rotational}=="1", \
-    ATTR{queue/scheduler}="cfq"
+    ATTR{queue/scheduler}="bfq"

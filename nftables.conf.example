@@ -1,36 +1,34 @@
 #!/usr/bin/nft -f
 
-table ip filter {
+table inet filter {
     chain input {
-        type filter hook input priority 0;
+        type filter hook input priority filter
 
-        ct state {established, related} accept
+        ct state { established, related } accept
         ct state invalid drop
-
         iifname lo accept
         ip protocol icmp accept
+        ip6 nexthdr icmpv6 accept
 
         udp dport 5353 accept
-
         #tcp dport <port> accept
 
-        reject with icmp type port-unreachable
+        reject
     }
 
     chain forward {
-        type filter hook forward priority 0;
+        type filter hook forward priority filter; policy drop
 
         #iifname <ifname> accept
         #oifname <ofname> accept
-
-        drop
     }
 
-    chain output {
-        type filter hook output priority 0;
+    chain output { type filter hook output priority filter; }
+}
 
-        accept
-    }
+table ip nat {
+    chain prerouting { type nat hook prerouting priority dstnat; }
+    chain postrouting { type nat hook postrouting priority srcnat; }
 }
 
 # vim: ft=conf fdm=marker

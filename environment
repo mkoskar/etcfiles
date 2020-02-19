@@ -4,11 +4,11 @@
 # Syntax: simple "KEY=VAL" pairs on separate lines
 #
 
-EDITOR='vim'
-LANG='en_US.UTF-8'
-LC_COLLATE='C'
-LESS='-MRS#3ci'
-LESSHISTFILE='-'
-PAGER='less'
-SYSTEMD_LESS='-MRS#3ci'
-TERMINFO_DIRS='/etc/terminfo:'
+EDITOR=vim
+LANG=en_US.UTF-8
+LC_COLLATE=C
+LESS=-MRS#3ci
+LESSHISTFILE=-
+PAGER=less
+SYSTEMD_LESS=-MRS#3ci
+TERMINFO_DIRS=/etc/terminfo:
