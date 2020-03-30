@@ -15,4 +15,4 @@ UUID=<UUID>                                 /home                       ext4   d
 /home/docker.img                            /var/lib/docker             btrfs  loop,defaults 0 0
 /home/machines.img                          /var/lib/machines           btrfs  loop,defaults 0 0
 
-tmpfs                                       /home/miro/tmp              tmpfs  defaults,mode=755,uid=1000,gid=1000 0 0
+tmpfs                                       /home/miro/tmp              tmpfs  defaults,mode=0755,uid=1000,gid=1000 0 0
