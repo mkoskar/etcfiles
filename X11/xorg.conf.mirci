@@ -8,6 +8,7 @@
 #
 # 2) "Zaphod" setup
 #
+#   * multiple "Screen" sections included in "Layout"
 #   * multiple X screens: 0, 1, ...
 #   * RANDR
 #   * XINERAMA missing

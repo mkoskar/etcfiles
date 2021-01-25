@@ -8,9 +8,6 @@
 ACTION=="add", SUBSYSTEM=="net", KERNEL=="eth*", \
     RUN+="/usr/bin/ethtool -s %k wol d"
 
-ACTION=="add", SUBSYSTEM=="net", KERNEL=="wlan*", \
-    RUN+="/usr/sbin/iw dev %k set power_save on"
-
 ACTION=="add", SUBSYSTEM=="pci", ATTR{power/control}="auto"
 
 # Kernel disables autosuspend (power/control="on") for all USB devices other
