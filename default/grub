@@ -1,7 +1,7 @@
 # GRUB boot loader configuration
 
 GRUB_DEFAULT=0
-GRUB_TIMEOUT=0
+GRUB_TIMEOUT=2
 GRUB_DISTRIBUTOR="Arch"
 GRUB_CMDLINE_LINUX_DEFAULT="audit=0 loglevel=3 quiet consoleblank=300 acpi_backlight=video rfkill.default_state=0 video.brightness_switch_enabled=0"
 GRUB_CMDLINE_LINUX="cryptdevice=/dev/disk/by-uuid/6c2654df-85f8-4db5-8fd4-6771e0c27dd4:vg_mirci0:allow-discards"
@@ -51,4 +51,7 @@ GRUB_DISABLE_RECOVERY=true
 
 # Uncomment to make GRUB remember the last selection. This requires
 # setting 'GRUB_DEFAULT=saved' above.
-#GRUB_SAVEDEFAULT="true"
+#GRUB_SAVEDEFAULT=true
+
+# Uncomment to disable submenus in boot menu
+#GRUB_DISABLE_SUBMENU=y
