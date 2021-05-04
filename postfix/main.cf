@@ -27,7 +27,7 @@
 #
 # The level below is what should be used with new (not upgrade) installs.
 #
-compatibility_level = 2
+compatibility_level = 3.6
 
 # SOFT BOUNCE
 #
@@ -250,7 +250,7 @@ unknown_local_recipient_reject_code = 550
 #
 # By default (mynetworks_style = subnet), Postfix "trusts" SMTP
 # clients in the same IP subnetworks as the local machine.
-# On Linux, this does works correctly only with interfaces specified
+# On Linux, this works correctly only with interfaces specified
 # with the "ifconfig" command.
 # 
 # Specify "mynetworks_style = class" when Postfix should "trust" SMTP
@@ -277,7 +277,7 @@ mynetworks_style = host
 # of listing the patterns here. Specify type:table for table-based lookups
 # (the value on the table right-hand side is not used).
 #
-#mynetworks = 168.100.189.0/28, 127.0.0.0/8
+#mynetworks = 168.100.3.0/28, 127.0.0.0/8
 #mynetworks = $config_directory/mynetworks
 #mynetworks = hash:/etc/postfix/network_table
 
