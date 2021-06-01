@@ -1,24 +1,24 @@
 # vim: ft=xf86conf
 #
-# 1) "Big Desktop" setup
+# 1) "Big Desktop" setup:
 #
 #   * single X screen: 0
-#   * RANDR
-#   * XINERAMA
+#   * RANDR present
+#   * XINERAMA present
 #
-# 2) "Zaphod" setup
+# 2) "Zaphod" setup:
 #
-#   * multiple "Screen" sections included in "Layout"
+#   * multiple "Screen" sections included in "ServerLayout"
 #   * multiple X screens: 0, 1, ...
-#   * RANDR
+#   * RANDR present
 #   * XINERAMA missing
 #
-# 3) "Xinerama" setup
+# 3) "Xinerama" setup:
 #
-#   * multiple "Screen" sections included in "Layout" with "Xinerama" option
+#   * multiple "Screen" sections included in "ServerLayout" with "Xinerama" option
 #   * single X screen: 0
 #   * RANDR missing
-#   * XINERAMA
+#   * XINERAMA present
 
 Section "Device"
     Identifier "card0"
