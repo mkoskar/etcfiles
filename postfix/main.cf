@@ -685,8 +685,8 @@ sample_directory = /etc/postfix
 #
 readme_directory = /usr/share/doc/postfix
 inet_protocols = ipv4
-shlib_directory = /usr/lib/postfix
 meta_directory = /etc/postfix
+shlib_directory = /usr/lib/postfix
 
 # CUSTOM
 inet_interfaces = loopback-only
