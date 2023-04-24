@@ -1,9 +1,7 @@
-# See also:
-#
-# * https://www.kernel.org/doc/Documentation/ABI/stable/sysfs-bus-usb
-# * https://www.kernel.org/doc/Documentation/ABI/testing/sysfs-devices-power
-# * https://www.kernel.org/doc/Documentation/power/pci.txt
-# * https://www.kernel.org/doc/Documentation/usb/power-management.txt
+# https://www.kernel.org/doc/Documentation/ABI/stable/sysfs-bus-usb
+# https://www.kernel.org/doc/Documentation/ABI/testing/sysfs-devices-power
+# https://www.kernel.org/doc/Documentation/power/pci.txt
+# https://www.kernel.org/doc/Documentation/usb/power-management.txt
 
 ACTION=="add", SUBSYSTEM=="net", KERNEL=="eth*", \
     RUN+="/usr/bin/ethtool -s %k wol d"
