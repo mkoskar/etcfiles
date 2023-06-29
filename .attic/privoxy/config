@@ -2270,6 +2270,7 @@ socket-timeout 300
 #
 
 # CUSTOM
+# ----------------------------------------
 
 client-header-order \
     Host \

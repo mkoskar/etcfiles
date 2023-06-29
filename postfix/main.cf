@@ -685,12 +685,14 @@ sample_directory = /etc/postfix
 #
 readme_directory = /usr/share/doc/postfix
 inet_protocols = ipv4
-meta_directory = /etc/postfix
 shlib_directory = /usr/lib/postfix
+meta_directory = /etc/postfix
 
 # CUSTOM
-inet_interfaces = loopback-only
-mynetworks_style = host
-mail_spool_directory = /var/spool/mail/
+# ----------------------------------------
+
 append_dot_mydomain = no
 default_transport = error: Local delivery only!
+inet_interfaces = loopback-only
+mail_spool_directory = /var/spool/mail/
+mynetworks_style = host

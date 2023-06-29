@@ -1,4 +1,4 @@
-ControlPort unix:/var/run/tor/control.sock GroupWritable RelaxDirModeCheck
+ControlPort unix:/run/tor/control.sock GroupWritable RelaxDirModeCheck
 DataDirectory /var/lib/tor
 Log err syslog
 User tor
