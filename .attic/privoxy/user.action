@@ -197,6 +197,7 @@ www.example.com/nasty-ads/sponsor.gif
 #www.facebook.com/(extern|plugins)/(login_status|like(box)?|activity|fan)\.php
 
 # CUSTOM
+# ----------------------------------------
 
 { \
     +change-x-forwarded-for{block} \

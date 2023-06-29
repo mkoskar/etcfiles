@@ -76,6 +76,7 @@
 #################################################################################
 
 # CUSTOM
+# ----------------------------------------
 
 CLIENT-HEADER-FILTER: my-default
 s|^Accept-Encoding:.*$|Accept-Encoding: gzip, deflate, sdch|

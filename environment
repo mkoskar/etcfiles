@@ -7,8 +7,8 @@
 EDITOR=vim
 LANG=en_US.UTF-8
 LC_COLLATE=C
-LESS=-MRS#3ci
+LESS='c i M Q R S --shift 5 --follow-name --incsearch --no-histdups --use-color DE231.1$ DN240.-$ DP231.1$ DR238.-$ DS16.214$ Du+Y-$'
 LESSHISTFILE=-
 PAGER=less
-SYSTEMD_LESS=-MRS#3ci
+SYSTEMD_LESS='c i M Q R S --shift 5 --follow-name --incsearch --no-histdups --use-color DE231.1$ DN240.-$ DP231.1$ DR238.-$ DS16.214$ Du+Y-$'
 TERMINFO_DIRS=/etc/terminfo:
