@@ -31,7 +31,7 @@
 #
 # The level below is what should be used with new (not upgrade) installs.
 #
-compatibility_level = 3.8
+compatibility_level = 3.9
 
 # SOFT BOUNCE
 #
@@ -410,7 +410,7 @@ unknown_local_recipient_reject_code = 550
 #alias_maps = hash:/etc/aliases
 #alias_maps = hash:/etc/aliases, nis:mail.aliases
 #alias_maps = netinfo:/aliases
-alias_maps = hash:/etc/postfix/aliases
+alias_maps = lmdb:/etc/postfix/aliases
 
 # The alias_database parameter specifies the alias database(s) that
 # are built with "newaliases" or "sendmail -bi".  This is a separate
@@ -454,7 +454,7 @@ alias_database = $alias_maps
 # The mailbox_command parameter specifies the optional external
 # command to use instead of mailbox delivery. The command is run as
 # the recipient with proper HOME, SHELL and LOGNAME environment settings.
-# Exception:  delivery for root is done as $default_user.
+# Exception:  delivery for root is done as $default_privs.
 #
 # Other environment variables of interest: USER (recipient username),
 # EXTENSION (address extension), DOMAIN (domain part of address),
